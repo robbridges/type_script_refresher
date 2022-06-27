@@ -2,7 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const sorter_1 = require("./sorter");
 const NumbersCollection_1 = require("./NumbersCollection");
+const CharactersCollection_1 = require("./CharactersCollection");
 const numbersCollection = new NumbersCollection_1.NumbersCollection([10, 3, -5, 0, 3782979]);
-const sorter = new sorter_1.Sorter(numbersCollection);
+const charactersCollection = new CharactersCollection_1.CharactersCollection('ayrhalksdhhu');
+const sorter = new sorter_1.Sorter(charactersCollection);
 sorter.sort();
-console.log(numbersCollection.data);
+console.log(charactersCollection.data);
